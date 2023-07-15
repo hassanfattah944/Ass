@@ -18,17 +18,7 @@ def find_max(lst):
     else:
         max_rest = find_max(lst[1:])
         return lst[0] if lst[0] > max_rest else max_rest
-    
-def count_tags(html, tag):
-    start_tag = "<" + tag + ">"
-    end_tag = "</" + tag + ">"
-    start_index = html.find(start_tag)
-    end_index = html.find(end_tag)
-    if start_index == -1 or end_index == -1:
-        return 0
-    else:
-        return 1 + count_tags(html[end_index + len(end_tag):], tag)
-    
+        
         
 while True:
     choice=input("Please Enter a choice:")
