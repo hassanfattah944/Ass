@@ -123,8 +123,7 @@ def run_events(tickets):
     tickets.remove(ticket)
 
 
-tickets = read_file(
-)  # Call the Function read_file to return the tickets ----> List
+tickets = read_file()  # Call the Function read_file to return the tickets ----> List
 print(
     "Welcome To Our Project:Corrupted Ticketing System.")  #Print this Message.
 user_type = input(
